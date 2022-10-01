@@ -13,7 +13,7 @@ RUN apt-get upgrade -y
 RUN echo "You can change this later"
 ENV RAM="6G"
 
-RUN apt-get install -y wget screen nano mysql-client dpkg tar net-tools unzip
+RUN apt-get install -y wget screen nano mysql-client dpkg tar net-tools unzip curl
 
 RUN apt-get install openjdk-8-jdk -y
 # RUN apt-get install openjdk-11-jdk -y
