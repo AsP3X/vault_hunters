@@ -55,7 +55,7 @@ RUN chmod +x /temp/start.sh
 ## Creating server directory for server creation process
 WORKDIR /server
 
-EXPOSE 25565
+EXPOSE 25569
 EXPOSE 25575
 
 CMD ["/bin/bash","/temp/start.sh"]
