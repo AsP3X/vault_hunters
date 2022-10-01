@@ -47,7 +47,7 @@ RUN java -jar /temp/forge-installer.jar --installServer /serverfiles
 # COPY ./serverfiles/server.properties /temp/server.properties
 COPY ./start.sh /temp/start.sh
 
-RUN wget https://nextcloud.corespace.de/s/LknkXQPEDjWeFcD/download/serverfiles.zip -o /temp/serverfiles.zip
+RUN curl -o /temp/serverfiles.zip https://nextcloud.corespace.de/s/LknkXQPEDjWeFcD/download/serverfiles.zip
 RUN unzip /temp/serverfiles.zip -d /temp
 
 RUN chmod +x /temp/start.sh
